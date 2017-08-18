@@ -1,0 +1,8 @@
+<title>User Register</title>
+
+<form action="{% url 'user:register' %}" method="post">
+    {% csrf_token %}
+    Email: <input type="text" name="email"><br>
+    Password: <input type="password" name="password"><br>
+    <input type="submit" value="Register">
+</form>
